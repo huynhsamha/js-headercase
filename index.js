@@ -1,6 +1,6 @@
 'use strict';
 
-function toTitleCase(str) {
+function toHeaderCase(str) {
 
 	if (!str) return '';
 
@@ -14,4 +14,4 @@ function toTitleCase(str) {
 		});
 }
 
-module.exports = toTitleCase;
+module.exports = toHeaderCase;

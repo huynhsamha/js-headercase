@@ -1,18 +1,18 @@
 {
-  "name": "js-titlecase",
-  "version": "1.0.1",
-  "description": "Titlecase the keys of an object",
+  "name": "js-headercase",
+  "version": "1.0.0",
+  "description": "headercase the keys of an object",
   "main": "index.js",
   "scripts": {
     "test": "node test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huynhsamha/js-titlecase.git"
+    "url": "git+https://github.com/huynhsamha/js-headercase.git"
   },
   "keywords": [
-    "titlecase",
-    "js-titlecase",
+    "headercase",
+    "js-headercase",
     "snake",
     "underscore",
     "underscore case",
@@ -29,7 +29,7 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/huynhsamha/js-titlecase/issues"
+    "url": "https://github.com/huynhsamha/js-headercase/issues"
   },
-  "homepage": "https://github.com/huynhsamha/js-titlecase#readme"
+  "homepage": "https://github.com/huynhsamha/js-headercase#readme"
 }

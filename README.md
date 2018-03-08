@@ -1,92 +1,92 @@
-# js-titlecase
+# js-headercase
 
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
 
-JavaScript titlecase string. Use for both node.js and browser
+JavaScript headercase string. Use for both node.js and browser
 
 
 ## Installation
 
-`$ npm install --save js-titlecase`
+`$ npm install --save js-headercase`
 
 or
 
-`$ yarn add js-titlecase`
+`$ yarn add js-headercase`
 
 ## Usage
 
 #### Node.JS
 
 ```js
-const toTitleCase = require('js-titlecase');
+const toHeaderCase = require('js-headercase');
 
-console.log(toTitleCase('string')); // => String
-console.log(toTitleCase('camelCase')); // => Camel Case
-console.log(toTitleCase('param-case')); // => Param Case
-console.log(toTitleCase('PascalCase')); // => Pascal Case
-console.log(toTitleCase('UPPER_CASE')); // => Upper Case
-console.log(toTitleCase('snake_case')); // => Snake Case
-console.log(toTitleCase('sentence case')); // => Sentence Case
-console.log(toTitleCase('Title Case')); // => Title Case
-console.log(toTitleCase('dot.case')); // => // Dot Case
+console.log(toHeaderCase('string')); // => String
+console.log(toHeaderCase('camelCase')); // => Camel Case
+console.log(toHeaderCase('param-case')); // => Param Case
+console.log(toHeaderCase('PascalCase')); // => Pascal Case
+console.log(toHeaderCase('UPPER_CASE')); // => Upper Case
+console.log(toHeaderCase('snake_case')); // => Snake Case
+console.log(toHeaderCase('sentence case')); // => Sentence Case
+console.log(toHeaderCase('Title Case')); // => Title Case
+console.log(toHeaderCase('dot.case')); // => // Dot Case
 
-console.log(toTitleCase('')); // => ''
-console.log(toTitleCase(null)); // => ''
-console.log(toTitleCase(undefined)); // => ''
+console.log(toHeaderCase('')); // => ''
+console.log(toHeaderCase(null)); // => ''
+console.log(toHeaderCase(undefined)); // => ''
 
-console.log(toTitleCase('Abc ___ 123 ___ xYz')); // => Abc 123 X Yz
-console.log(toTitleCase('123__abc  ... ?// {#} def 12')); // => 123 Abc Def 12
-console.log(toTitleCase('	tab space ??? ________')); // => Tab Space
-console.log(toTitleCase('___?||123  abc|| 123..123')); // => 123 Abc 123 123
-console.log(toTitleCase('!@#$%  {}|":;" ABC XyZ G123H')); // => Abc Xy z G123h
-console.log(toTitleCase(' ^&* #DEFine x: 15 + ==')); // => Define X 15
-console.log(toTitleCase('123456789')); // => 123456789
+console.log(toHeaderCase('Abc ___ 123 ___ xYz')); // => Abc 123 X Yz
+console.log(toHeaderCase('123__abc  ... ?// {#} def 12')); // => 123 Abc Def 12
+console.log(toHeaderCase('	tab space ??? ________')); // => Tab Space
+console.log(toHeaderCase('___?||123  abc|| 123..123')); // => 123 Abc 123 123
+console.log(toHeaderCase('!@#$%  {}|":;" ABC XyZ G123H')); // => Abc Xy z G123h
+console.log(toHeaderCase(' ^&* #DEFine x: 15 + ==')); // => Define X 15
+console.log(toHeaderCase('123456789')); // => 123456789
 ```
 
 #### Browser
 ##### 1. NPM Package
 ```html
-<script src="./node_modules/js-titlecase/dist/js-titlecase.js"></script>
+<script src="./node_modules/js-headercase/dist/js-headercase.js"></script>
 <!-- Or use minified -->
-<script src="./node_modules/js-titlecase/dist/js-titlecase.min.js"></script>
+<script src="./node_modules/js-headercase/dist/js-headercase.min.js"></script>
 ```
 ##### 2. Download from source
 ```html
-<script src="path/to/js-titlecase"></script>
+<script src="path/to/js-headercase"></script>
 ```
 ##### Usage
 ```html
 <script>
-	console.log(toTitleCase('string')); // => String
-	console.log(toTitleCase('camelCase')); // => Camel Case
-	console.log(toTitleCase('param-case')); // => Param Case
-	console.log(toTitleCase('PascalCase')); // => Pascal Case
-	console.log(toTitleCase('UPPER_CASE')); // => Upper Case
-	console.log(toTitleCase('snake_case')); // => Snake Case
-	console.log(toTitleCase('sentence case')); // => Sentence Case
-	console.log(toTitleCase('Title Case')); // => Title Case
-	console.log(toTitleCase('dot.case')); // => // Dot Case
+	console.log(toHeaderCase('string')); // => String
+	console.log(toHeaderCase('camelCase')); // => Camel Case
+	console.log(toHeaderCase('param-case')); // => Param Case
+	console.log(toHeaderCase('PascalCase')); // => Pascal Case
+	console.log(toHeaderCase('UPPER_CASE')); // => Upper Case
+	console.log(toHeaderCase('snake_case')); // => Snake Case
+	console.log(toHeaderCase('sentence case')); // => Sentence Case
+	console.log(toHeaderCase('Title Case')); // => Title Case
+	console.log(toHeaderCase('dot.case')); // => // Dot Case
 
-	console.log(toTitleCase('')); // => ''
-	console.log(toTitleCase(null)); // => ''
-	console.log(toTitleCase(undefined)); // => ''
+	console.log(toHeaderCase('')); // => ''
+	console.log(toHeaderCase(null)); // => ''
+	console.log(toHeaderCase(undefined)); // => ''
 
-	console.log(toTitleCase('Abc ___ 123 ___ xYz')); // => Abc 123 X Yz
-	console.log(toTitleCase('123__abc  ... ?// {#} def 12')); // => 123 Abc Def 12
-	console.log(toTitleCase('	tab space ??? ________')); // => Tab Space
-	console.log(toTitleCase('___?||123  abc|| 123..123')); // => 123 Abc 123 123
-	console.log(toTitleCase('!@#$%  {}|":;" ABC XyZ G123H')); // => Abc Xy z G123h
-	console.log(toTitleCase(' ^&* #DEFine x: 15 + ==')); // => Define X 15
-	console.log(toTitleCase('123456789')); // => 123456789
+	console.log(toHeaderCase('Abc ___ 123 ___ xYz')); // => Abc 123 X Yz
+	console.log(toHeaderCase('123__abc  ... ?// {#} def 12')); // => 123 Abc Def 12
+	console.log(toHeaderCase('	tab space ??? ________')); // => Tab Space
+	console.log(toHeaderCase('___?||123  abc|| 123..123')); // => 123 Abc 123 123
+	console.log(toHeaderCase('!@#$%  {}|":;" ABC XyZ G123H')); // => Abc Xy z G123h
+	console.log(toHeaderCase(' ^&* #DEFine x: 15 + ==')); // => Define X 15
+	console.log(toHeaderCase('123456789')); // => 123456789
 </script>
 ```
 
 ## API
 
-### totitlecase(str)
+### toHeaderCase(str)
 
-Returns a new string which is titlecase format of str.
+Returns a new string which is headercase format of str.
 
 
 ## Related
@@ -98,7 +98,7 @@ Returns a new string which is titlecase format of str.
 + [js-sentencecase](https://github.com/huynhsamha/js-sentencecase)
 
 
-[npm-image]: https://img.shields.io/npm/v/js-titlecase.svg?style=flat
-[npm-url]: https://www.npmjs.com/package/js-titlecase
-[downloads-image]: https://img.shields.io/npm/dm/js-titlecase.svg?style=flat
-[downloads-url]: https://www.npmjs.com/package/js-titlecase
+[npm-image]: https://img.shields.io/npm/v/js-headercase.svg?style=flat
+[npm-url]: https://www.npmjs.com/package/js-headercase
+[downloads-image]: https://img.shields.io/npm/dm/js-headercase.svg?style=flat
+[downloads-url]: https://www.npmjs.com/package/js-headercase

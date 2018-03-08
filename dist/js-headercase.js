@@ -1,6 +1,6 @@
 'use strict';
 
-function toTitleCase(str) {
+function toHeaderCase(str) {
 
 	if (!str) return '';
 
