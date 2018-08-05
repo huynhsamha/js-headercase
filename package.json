@@ -1,6 +1,6 @@
 {
   "name": "js-headercase",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "JavaScript Convert string to Header Case - Use for both Node.JS and Browser.",
   "main": "index.js",
   "scripts": {
